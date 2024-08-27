@@ -9,5 +9,6 @@ pkgs.mkShell {
     python312
     python312Packages.beautifulsoup4
     python312Packages.requests
+    python312Packages.grequests
  ];
 }
