@@ -49,7 +49,7 @@ def main(modlist_path):
             size = get_mod_size(link)
             modpack_size += size_to_bytes(size, return_unit="MB")
             mod_count += 1
-            print(f"{size}\t{name}\t{link}")
+            print(f"{size.ljust(12)}{name.ljust(60, ".")} {link}")
         print(f"\nTotal mod count:\t{mod_count}")
         print(f"Total modlist size:\t{round(modpack_size)} MB/{round(modpack_size/1000, 2)} GB")
 
